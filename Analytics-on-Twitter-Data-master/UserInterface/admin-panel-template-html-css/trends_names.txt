@@ -1,0 +1,6 @@
+text,size
+#ThursdayThoughts,263
+#FelizLunes,254
+#FelizMartes,247
+#FelizMiercoles,239
+#FelizSabado,234

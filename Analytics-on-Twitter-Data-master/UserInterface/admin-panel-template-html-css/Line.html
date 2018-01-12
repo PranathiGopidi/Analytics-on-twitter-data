@@ -1,0 +1,65 @@
+<!--
+***
+Line Chart
+Reference: http://www.highcharts.com/demo/line-basic/gray
+***
+-->
+
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Highcharts Example</title>
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script type="text/javascript">
+$(function () {
+    $('#container').highcharts({
+        title: {
+            text: 'Tweets based on respective time in a day',
+            x: -20 //center
+        },
+        subtitle: {
+            text: '',
+            x: -20
+        },
+        xAxis: {
+            categories: ['00AM', '01AM', '02AM', '03AM','04AM','05AM','06AM','07AM','08AM','09AM','10AM',
+			'11AM','12PM','01PM', '02PM', '03PM','04PM','05PM','06PM','07PM','08PM','09PM','10PM',
+			'11PM']
+        },
+        yAxis: {
+            title: {
+                text: 'Tweet Count'
+            },
+            plotLines: [{
+                value: 0,
+                width: 1,
+                color: '#808080'
+            }]
+        },
+        tooltip: {
+            valueSuffix: ' tweets'
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'middle',
+            borderWidth: 0
+        },
+        series: [{
+            //name: 'Tokyo',
+            data: [0,0,0,0,5222,1319,5650,0,0,0,0,0,0,0,0,0,0,0,12710,15357,2499,0,0,0]
+        }]
+    });
+});
+		</script>
+	</head>
+	<body style="background: #F3F781">
+<script src="js/highcharts.js"></script>
+<script src="js/exporting.js"></script>
+
+<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+
+	</body>
+</html>

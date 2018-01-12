@@ -1,0 +1,5 @@
+key,value
+horror,54
+comedy,14
+thriller,8
+action,62
